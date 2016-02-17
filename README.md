@@ -1,17 +1,32 @@
-# Dextro's dotfiles
+# dotfiles
 
-Based on [the dotfiles of Zach Holman](https://github.com/holman/dotfiles)
+Based on [Dextro's fork](https://github.com/dextro/dotfiles.git) of the [the dotfiles of Zach Holman](https://github.com/holman/dotfiles)
 
-## dotfiles
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
 
-Your dotfiles are how you personalize your system. These are mine.
+- [dotwtf ?](#dotwtf-)
+- [Installation](#installation)
+- [Topical](#topical)
+- [Components](#components)
 
-## install
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## dotwtf ?
+
+Dotfiles are a way to personalize your system.
+
+The legend goes that dot-files arose from a bug in the earliest days of UNIX: in an effort to avoid listing the `.` and `..` entries of a directory, the ls command skipped files that began with the '.' character. As a result, any file with a name beginning with '.' was not reported by ls, i.e. it was a "hidden" file. A user's home directory was a convenient place to put user-specific configuration files, but such files were also an eyesore; one popular solution to this problem was to make those configuration files hidden so that they wouldn't annoy the user. Thus, the tradition of dot-files was born.
+
+
+## Installation
 
 Run this:
 
 ```sh
-git clone https://github.com/dextro/dotfiles.git ~/.dotfiles
+git clone https://github.com/hstandaert/dotfiles.git ~/.dotfiles
+git submodule update --init --recursive
 cd ~/.dotfiles
 script/bootstrap
 ```
@@ -27,7 +42,7 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
-## topical
+## Topical
 
 Everything's built around topic areas. If you're adding a new area to your
 forked dotfiles — say, "Java" — you can simply add a `java` directory and put
@@ -35,7 +50,7 @@ files in there. Anything with an extension of `.zsh` will get automatically
 included into your shell. Anything with an extension of `.symlink` will get
 symlinked without extension into `$HOME` when you run `script/bootstrap`.
 
-## components
+## Components
 
 There's a few special files in the hierarchy.
 
@@ -51,8 +66,3 @@ There's a few special files in the hierarchy.
   your `$HOME`. This is so you can keep all of those versioned in your dotfiles
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `script/bootstrap`.
-
-## bugs
-
-This are *my* dotfiles, so there's a good chance it may break
-something if I forget to make a check for a dependency.
