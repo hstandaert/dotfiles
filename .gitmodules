@@ -10,3 +10,6 @@
 [submodule "ssh-config"]
 	path = ssh-config
 	url = git@github.ncube.be:operations/ssh-config.git
+[submodule "pm"]
+	path = pm
+	url = git@github.com:hstandaert/pm.git
