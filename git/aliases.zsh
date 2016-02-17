@@ -10,9 +10,9 @@ fi
 alias g='git'
 
 # The rest of my fun git aliases
-alias gp='git up'
+alias gl='git up'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gpush='git push origin HEAD'
+alias gp='git push origin HEAD'
 alias gd='git diff'
 alias gc='git commit'
 alias gch='git checkout'
@@ -22,4 +22,8 @@ alias ga='git add'
 alias gap='git add -p'
 alias gaa='git add -A' # stages all
 alias gst='git stash -u' # stashes all (including untracked files)
-alias gstp='git stash pop' 
+alias gstp='git stash pop'
+alias gr='git reset'
+alias grh='git reset HEAD~1'
+alias gua='git reset HEAD' # git undo add
+alias gum='git reset --merge ORIG_HEAD' # git undo merge

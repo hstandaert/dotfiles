@@ -28,3 +28,6 @@ alias egrep='egrep --color=auto'
 alias t="tree -L 1 -la"
 alias tt="tree -L 2 -la"
 alias td="tree -L 1 -la -d"
+
+#PhpStorm
+alias strm="open -a PhpStorm"

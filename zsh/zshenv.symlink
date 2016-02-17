@@ -19,7 +19,7 @@ export LC_ALL="en_US.UTF-8"
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `p [tab]` to
-export PROJECTS=~/Projects
+export PROJECTS=~/Sites
 
 # chef
 export CHEF_USER="bertpattyn"
