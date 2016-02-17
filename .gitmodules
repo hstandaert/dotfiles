@@ -7,3 +7,6 @@
 [submodule "ssh.symlink"]
 	path = ssh.symlink
 	url = git@github.ncube.be:operations/ssh-config.git
+[submodule "ssh-config"]
+	path = ssh-config
+	url = git@github.ncube.be:operations/ssh-config.git

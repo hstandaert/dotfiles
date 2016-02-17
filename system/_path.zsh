@@ -6,3 +6,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # add composer to PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# add nvm to path
+export NVM_DIR="$HOME/.nvm"

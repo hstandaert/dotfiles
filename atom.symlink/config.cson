@@ -24,7 +24,7 @@
       "isotope-ui"
       "atom-dark-syntax"
     ]
-    projectHome: "~/Projects"
+    projectHome: "~/Sites"
     audioBeep: false
   minimap:
     autoToggle: true

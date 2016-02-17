@@ -1,5 +1,11 @@
+# [Bert Pattyn] https://github.com/dextro
+# [Mathias Bynens] https://github.com/mathiasbynens
+
 alias reload!='. ~/.zshrc'
 alias upgrade!='dot'
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
 
 # disable autocorrect and run as admin
 alias mtr="nocorrect sudo mtr"
@@ -12,8 +18,13 @@ genpwd() {
   echo $PW | pbcopy;
 }
 
-# clear cache of Mac OS X 10.10.4
-alias cc="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; echo 'cache cleared';"
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
-# clear cache of Mac OS X 10.10.3 and lower
-# alias cc="sudo discoveryutil udnsflushcaches && echo 'cache cleared'"
+# Tree shortcuts
+alias t="tree -L 1 -la"
+alias tt="tree -L 2 -la"
+alias td="tree -L 1 -la -d"
