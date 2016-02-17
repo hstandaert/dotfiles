@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# dot
+#
+# `dot` handles installation, updates, things like that. Run it periodically
+# to make sure you're on the latest and greatest.
+
+# Upgrade homebrew
+brew update
+
+# Upgrade all outdated brew packages
+brew upgrade `brew outdated`
+
+# install/upgrade the atom packages
+apm stars -i

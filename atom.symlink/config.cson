@@ -1,0 +1,41 @@
+"*":
+  "release-notes":
+    viewedVersion: "0.95.0"
+  welcome:
+    showOnStartup: false
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 13
+    showIndentGuide: false
+    invisibles: {}
+    showInvisibles: true
+  core:
+    disabledPackages: [
+      "exception-reporting"
+      "metrics"
+      "linter"
+      "linter-csslint"
+      "linter-jscs"
+      "linter-php"
+      "linter-rubocop"
+      "linter-ruby"
+    ]
+    themes: [
+      "isotope-ui"
+      "atom-dark-syntax"
+    ]
+    projectHome: "~/Projects"
+    audioBeep: false
+  minimap:
+    autoToggle: true
+    displayPluginsControls: false
+    plugins: {}
+  linter: {}
+  "isotope-ui":
+    backgroundColor: "false"
+    fontFamily: "Source Sans Pro"
+  "isotope-light-ui":
+    fontFamily: "System Default"
+    matchEditorFont: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
