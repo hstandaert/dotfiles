@@ -1,41 +1,37 @@
 "*":
-  "release-notes":
-    viewedVersion: "0.95.0"
-  welcome:
-    showOnStartup: false
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "spell-check"
+    ]
+    projectHome: "~/Sites"
+    themes: [
+      "atom-material-ui"
+      "atom-dark-syntax"
+    ]
   editor:
     fontFamily: "Source Code Pro"
     fontSize: 13
-    showIndentGuide: false
     invisibles: {}
+    showIndentGuide: false
     showInvisibles: true
-  core:
-    disabledPackages: [
-      "exception-reporting"
-      "metrics"
-      "linter"
-      "linter-csslint"
-      "linter-jscs"
-      "linter-php"
-      "linter-rubocop"
-      "linter-ruby"
-    ]
-    themes: [
-      "isotope-ui"
-      "atom-dark-syntax"
-    ]
-    projectHome: "~/Sites"
-    audioBeep: false
+  "exception-reporting":
+    userId: "a2e74873-c03b-cf48-f5d2-454211fdfbc4"
+  "isotope-light-ui":
+    fontFamily: "System Default"
+    matchEditorFont: true
+  "isotope-ui":
+    backgroundColor: "false"
+    fontFamily: "Source Sans Pro"
+  linter: {}
   minimap:
     autoToggle: true
     displayPluginsControls: false
     plugins: {}
-  linter: {}
-  "isotope-ui":
-    backgroundColor: "false"
-    fontFamily: "Source Sans Pro"
-  "isotope-light-ui":
-    fontFamily: "System Default"
-    matchEditorFont: true
+  "release-notes":
+    viewedVersion: "0.95.0"
+  "spell-check": {}
   "tree-view":
     hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
