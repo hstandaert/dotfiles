@@ -13,3 +13,6 @@
 [submodule "pm"]
 	path = pm
 	url = git@github.com:hstandaert/pm.git
+[submodule "nvm.symlink"]
+	path = nvm.symlink
+	url = git@github.com:creationix/nvm.git
