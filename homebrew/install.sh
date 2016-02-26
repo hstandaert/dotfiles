@@ -38,6 +38,9 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/php/php55 --with-gmp
 brew install git
+brew install git-flow
+brew install git-flow-completion
+brew install mariadb
 
 # Install usefull binaries
 brew install exiv2
@@ -53,6 +56,12 @@ brew install imagemagick --with-webp
 brew install nmap
 brew install rename
 
+# PHP versions
+brew tap josegonzalez/php
+brew install php55
+brew install php56
+brew install php70
+
 # https://github.com/github/hub
 brew install hub
 
@@ -62,11 +71,11 @@ brew install httpie
 # https://github.com/sstephenson/rbenv
 brew install rbenv ruby-build
 
-# https://keybase.io
-brew install keybase
-
 # http://jonas.nitro.dk/tig/
 brew install tig
+
+# Syntax highlighting for cat
+brew install ccat
 
 # tmux
 brew instal tmux
@@ -74,14 +83,28 @@ brew instal tmux
 # https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 brew install reattach-to-user-namespace
 
-# packer
-brew install packer
-
-# Homebrew cask
+# =================
+#   Homebrew cask
+# =================
 brew install caskroom/cask/brew-cask
 
+# Some handy tools
+brew cask install atom
 brew cask install google-chrome
-brew cask install moom
+brew cask install sequel-pro
+brew cask install spectacle
 brew cask install google-cloud-sdk
+
+# =================
+#   Homebrew gem
+# =================
+brew install brew-gem
+
+# Some handy tools
+brew gem install bundler
+brew gem install sass
+brew gem install jekyll
+brew gem install tmuxinator
+brew gem install capistrano
 
 exit 0
