@@ -25,6 +25,13 @@ done
 autoload -U compinit
 compinit
 
+# Sensible defaults that make autocompletion as verbose as possible
+zstyle ‘:completion:*’ verbose yes
+zstyle ‘:completion:*:descriptions’ format ‘%B%d%b’
+zstyle ‘:completion:*:messages’ format ‘%d’
+zstyle ‘:completion:*:warnings’ format ‘No matches for: %d’
+zstyle ‘:completion:*’ group-name ”
+
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
 do
