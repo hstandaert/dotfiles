@@ -77,6 +77,9 @@ brew install tig
 # Syntax highlighting for cat
 brew install ccat
 
+# completion for tmuxinator
+brew install homebrew/completions/tmuxinator-completion
+
 # tmux
 brew instal tmux
 
