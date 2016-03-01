@@ -97,6 +97,7 @@ brew cask install google-chrome
 brew cask install sequel-pro
 brew cask install spectacle
 brew cask install google-cloud-sdk
+brew cask install nylas-n1 # a kickass (free) mail client
 
 # =================
 #   Homebrew gem
