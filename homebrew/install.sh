@@ -98,6 +98,14 @@ brew cask install sequel-pro
 brew cask install spectacle
 brew cask install google-cloud-sdk
 brew cask install nylas-n1 # a kickass (free) mail client
+brew cask install caffeine
+
+#Extensions for mac OSX quicklook
+brew cask install qlcolorcode
+brew cask install betterzipql
+brew cask install quicklook-csv
+brew cask install quicklook-json
+brew cask install qlstephen
 
 # =================
 #   Homebrew gem
