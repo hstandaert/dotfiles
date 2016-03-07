@@ -1,4 +1,6 @@
 "*":
+  "atom-beautify":
+    _analyticsUserId: "e8e5f743-3927-4dca-a585-de3460d76c4b"
   core:
     audioBeep: false
     disabledPackages: [
