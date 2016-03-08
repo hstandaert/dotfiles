@@ -34,7 +34,4 @@ alias cat="ccat"
 
 #Applications
 alias strm="open -a PhpStorm"
-alias wb="open -a 'Google Chrome Canary' http://${PWD##*/}.dev" # Open the current directory name in Google Chrome Canary. F.e. When you're in ~/Sites/project, http://project.dev will be opened
-
-
 alias sf='app/console' # Symfony shortcut
