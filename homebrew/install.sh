@@ -77,15 +77,6 @@ brew install tig
 # Syntax highlighting for cat
 brew install ccat
 
-# completion for tmuxinator
-brew install homebrew/completions/tmuxinator-completion
-
-# tmux
-brew instal tmux
-
-# https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
-brew install reattach-to-user-namespace
-
 # =================
 #   Homebrew cask
 # =================
@@ -116,7 +107,6 @@ brew install brew-gem
 brew gem install bundler
 brew gem install sass
 brew gem install jekyll
-brew gem install tmuxinator
 brew gem install capistrano
 
 exit 0
