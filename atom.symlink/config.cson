@@ -5,15 +5,39 @@
     audioBeep: false
     disabledPackages: [
       "spell-check"
+      "about"
+      "bookmarks"
+      "bracket-matcher"
+      "dev-live-reload"
+      "image-view"
+      "language-coffee-script"
+      "language-clojure"
+      "language-c"
+      "language-csharp"
+      "language-git"
+      "language-go"
+      "language-java"
+      "language-less"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-python"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-toml"
+      "link"
+      "metrics"
+      "open-on-github"
+      "welcome"
+      "update-package-dependencies"
     ]
     projectHome: "~/Sites"
     themes: [
-      "atom-material-ui"
-      "atom-dark-syntax"
+      "one-light-ui"
+      "one-light-syntax"
     ]
   editor:
-    fontFamily: "Source Code Pro"
-    fontSize: 13
     invisibles:
       cr: " "
       eol: " "
