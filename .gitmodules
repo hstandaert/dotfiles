@@ -4,9 +4,6 @@
 [submodule "vim/vim.symlink/bundle/vim-sensible"]
 	path = vim/vim.symlink/bundle/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule "pm"]
-	path = pm
-	url = git@github.com:hstandaert/pm.git
 [submodule "nvm.symlink"]
 	path = nvm.symlink
 	url = git@github.com:creationix/nvm.git
