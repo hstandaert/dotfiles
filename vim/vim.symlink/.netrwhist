@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/usr/local/Cellar'
+let g:netrw_dirhist_2='/usr/local/Cellar/php56/5.6.19/lib/php/extensions/no-debug-non-zts-20131226'
+let g:netrw_dirhist_3='/usr/bin'
+let g:netrw_dirhist_4='/Users/helenastandaert/Sites/sevenedge/.git'
