@@ -40,7 +40,7 @@ brew install homebrew/php/php55 --with-gmp
 brew install git
 brew install git-flow
 brew install git-flow-completion
-brew install mariadb
+brew install mysql
 
 # Install usefull binaries
 brew install exiv2
@@ -107,6 +107,5 @@ brew install brew-gem
 brew gem install bundler
 brew gem install sass
 brew gem install jekyll
-brew gem install capistrano
 
 exit 0
