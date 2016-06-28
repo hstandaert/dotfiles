@@ -1,4 +1,4 @@
-export PATH="./bin:/usr/local/bin:/usr/local/sbin:$ZSH/bin:$PATH"
+export PATH=/usr/local/bin:/usr/local/sbin:~/scripts:$PATH:$ZSH/bin
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 # add rbenv to PATH
@@ -9,3 +9,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # add nvm to path
 export NVM_DIR="$HOME/.nvm"
+
+# add mysql dir to path
+export PATH="/usr/local/mysql/bin:$PATH"
