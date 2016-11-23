@@ -44,3 +44,5 @@ Thumbs.db
 ###############
 *.codekit
 ç
+.tags
+.tags1
