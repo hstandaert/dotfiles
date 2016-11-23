@@ -35,3 +35,5 @@ alias cat="ccat"
 #Applications
 alias strm="open -a PhpStorm"
 alias sf='app/console' # Symfony shortcut
+alias c='bin/cake' # CakePHP shortcut
+alias ps='itermocil' # shortcut for itermocil
