@@ -1,0 +1,156 @@
+[
+  {
+    title: "Digital Bass Control"
+    group: "Pioneer"
+    paths: [
+      "/Users/helenastandaert/Sites/pioneer/docroot/sites/all/modules/custom/pioneer_dbc"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Digital Bass Controll(TECH DEMO)"
+    group: "Pioneer"
+    paths: [
+      "/Users/helenastandaert/Sites/digital-bass-control"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Boilerplate"
+    group: "Sevenedge"
+    paths: [
+      "/Users/helenastandaert/Sites/boilerplate"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Provamel"
+    group: null
+    paths: [
+      "/Users/helenastandaert/Sites/provamel"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Creative TUI"
+    group: "TUI"
+    paths: [
+      "/Users/helenastandaert/Sites/creative-tui"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Memory Game"
+    group: "TUI"
+    paths: [
+      "/Users/helenastandaert/Sites/jetairmemorygame"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Carmeliet"
+    group: null
+    paths: [
+      "/Users/helenastandaert/Sites/carmeliet"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Alfavision"
+    group: null
+    paths: [
+      "/Users/helenastandaert/Sites/alfavision"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "In De Vuilbak"
+    group: "LDV"
+    paths: [
+      "/Users/helenastandaert/Sites/ldv-indevuilbak"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Vergroot De Hoop"
+    group: null
+    paths: [
+      "/Users/helenastandaert/Sites/vergrootdehoop"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "365"
+    group: null
+    paths: [
+      "/Users/helenastandaert/Sites/365"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Sevenedge"
+    group: "Sevenedge"
+    paths: [
+      "/Users/helenastandaert/Sites/sevenedge"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Historium - Website 2016"
+    group: "Historium"
+    paths: [
+      "/Users/helenastandaert/Sites/historium"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "Historium - Productsite"
+    group: "Historium"
+    paths: [
+      "/Users/helenastandaert/Sites/historium-productsite"
+    ]
+    icon: "icon-zap"
+    settings: {}
+    devMode: false
+    template: null
+  }
+]
