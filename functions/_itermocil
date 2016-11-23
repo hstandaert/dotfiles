@@ -1,0 +1,8 @@
+#compdef itermocil
+
+_itermocil () {
+	compadd `ls ~/.itermocil | sed 's/\.[^.]*$//'`
+}
+
+compdef _itermocil itermocil ps
+
