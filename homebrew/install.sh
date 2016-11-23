@@ -29,6 +29,8 @@ brew install findutils
 brew install gnu-sed --default-names
 # Install Bash 4
 brew install bash
+# Itermocil
+brew install TomAnthony/brews/itermocil
 
 # Install wget with IRI support
 brew install wget --enable-iri
