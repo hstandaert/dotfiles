@@ -1,9 +1,0 @@
-'.source.js':
-  'console.log':
-    'prefix': 'vd'
-    'body': 'console.log($1);$2 //@TODO: remove console.log'
-
-'.source.php':
-  'var_dump':
-    'prefix': 'vd'
-    'body': 'var_dump($1);die;$2 //@TODO: remove var_dump();'
