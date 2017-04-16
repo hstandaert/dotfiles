@@ -29,8 +29,6 @@ brew install findutils
 brew install gnu-sed --default-names
 # Install Bash 4
 brew install bash
-# Itermocil
-brew install TomAnthony/brews/itermocil
 
 # Install wget with IRI support
 brew install wget --enable-iri
@@ -40,22 +38,13 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/php/php55 --with-gmp
 brew install git
-brew install git-flow
-brew install git-flow-completion
 brew install mysql
 
 # Install usefull binaries
-brew install exiv2
-brew install grc
-brew install spark
-brew install mtr
-brew install mosh
 brew install ack
 brew install gpg
 brew install node
-brew install tree
 brew install imagemagick --with-webp
-brew install nmap
 brew install rename
 
 # PHP versions
@@ -63,9 +52,7 @@ brew tap josegonzalez/php
 brew install php55
 brew install php56
 brew install php70
-
-# https://github.com/github/hub
-brew install hub
+brew install php71
 
 # https://github.com/jakubroztocil/httpie
 brew install httpie
@@ -94,19 +81,8 @@ brew cask install caffeine
 
 #Extensions for mac OSX quicklook
 brew cask install qlcolorcode
-brew cask install betterzipql
 brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install qlstephen
-
-# =================
-#   Homebrew gem
-# =================
-brew install brew-gem
-
-# Some handy tools
-brew gem install bundler
-brew gem install sass
-brew gem install jekyll
 
 exit 0
