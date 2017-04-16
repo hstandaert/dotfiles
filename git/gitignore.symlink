@@ -29,6 +29,8 @@
 .idea
 .sass-cache
 *.css.map
+nbproject
+.remote-sync.json
 
 # OS generated files #
 ######################
