@@ -71,6 +71,9 @@ brew install ccat
 # =================
 brew install caskroom/cask/brew-cask
 
+# Add command to upgrade casks
+brew tap buo/cask-upgrade
+
 # Some handy tools
 brew cask install atom
 brew cask install google-chrome
