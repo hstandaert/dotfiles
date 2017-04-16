@@ -17,3 +17,6 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Remove all .DS_Store files in the current folders
+alias cleanup="sudo find . -name ".DS_Store" -depth -exec rm {} \;"
