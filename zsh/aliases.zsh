@@ -24,11 +24,6 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# Tree shortcuts
-alias t="tree -L 1 -la"
-alias tt="tree -L 2 -la"
-alias td="tree -L 1 -la -d"
-
 # Colored output for cat
 alias cat="ccat"
 
@@ -36,4 +31,3 @@ alias cat="ccat"
 alias strm="open -a PhpStorm"
 alias sf='app/console' # Symfony shortcut
 alias c='bin/cake' # CakePHP shortcut
-alias ps='itermocil' # shortcut for itermocil
