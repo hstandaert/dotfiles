@@ -5,6 +5,10 @@ then
   source ~/.localrc
 fi
 
+# Autoload colors
+autoload -U colors
+colors
+
 # all of our zsh files
 typeset -U config_files
 config_files=($ZSH/**/*.zsh)
