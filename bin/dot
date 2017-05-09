@@ -11,5 +11,8 @@ brew update
 # Upgrade all outdated brew packages
 brew upgrade `brew outdated`
 
+# Upgrade all brew casks
+brew cu --cleanup --yes
+
 # install/upgrade the atom packages
-apm update
+apm update --no-confirm
