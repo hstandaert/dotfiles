@@ -27,7 +27,7 @@ alias egrep='egrep --color=auto'
 # Colored output for cat
 alias cat="ccat"
 
-#Applications
-alias strm="open -a PhpStorm"
+# Framework aliases
 alias sf='app/console' # Symfony shortcut
 alias c='bin/cake' # CakePHP shortcut
+alias pa='php artisan' # Laravel artisan shortcut
