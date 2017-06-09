@@ -27,7 +27,7 @@ brew install moreutils
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`
 brew install gnu-sed --default-names
-# Install Bash 4
+# Install Bash
 brew install bash
 
 # Install wget with IRI support
@@ -36,7 +36,6 @@ brew install wget --enable-iri
 # Install more recent versions of some OS X tools
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
-brew install homebrew/php/php55 --with-gmp
 brew install git
 brew install mysql
 
@@ -62,6 +61,9 @@ brew install rbenv ruby-build
 
 # http://jonas.nitro.dk/tig/
 brew install tig
+
+# Node version manager
+brew install nvm
 
 # Syntax highlighting for cat
 brew install ccat

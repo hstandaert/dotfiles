@@ -9,6 +9,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # add nvm to path
 export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
 
 # add mysql dir to path
 export PATH="/usr/local/mysql/bin:$PATH"
