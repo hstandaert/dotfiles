@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "ln -s target link_name",
+    "dontautoexpand" : true,
+    "uid" : "4BFEDA0F-5F48-4E34-9BB0-D064068920FF",
+    "name" : "Symlink a file",
+    "keyword" : "symlink"
+  }
+}

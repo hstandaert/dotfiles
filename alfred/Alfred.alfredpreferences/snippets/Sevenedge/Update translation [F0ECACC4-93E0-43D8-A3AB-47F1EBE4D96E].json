@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "bin\/cake localize updateTranslation",
+    "dontautoexpand" : true,
+    "uid" : "F0ECACC4-93E0-43D8-A3AB-47F1EBE4D96E",
+    "name" : "Update translation",
+    "keyword" : "cake"
+  }
+}
