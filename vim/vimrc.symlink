@@ -39,10 +39,12 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Load pathogen
+execute pathogen#infect()
+
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -138,8 +140,13 @@ endif
 
 
 " Add a bit extra margin to the left
-set foldcolumn=1
+" set foldcolumn=1
 
+" Add line numbers
+set number
+
+" Disable folding
+set nofoldenable
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -341,6 +348,11 @@ map <leader>x :e ~/buffer.md<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
+" Autosave
+if has("autocmd")
+    autocmd TextChanged,TextChangedI <buffer> silent write
+endif
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
@@ -373,3 +385,22 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+ \ 'dir':  '\v[\/]\.(git|hg|svn|idea)$',
+ \ 'file': '\v\.(exe|so|dll)$',
+ \ 'link': 'some_bad_symbolic_links',
+ \ }
+
+let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
