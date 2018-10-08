@@ -22,18 +22,7 @@
 			</dict>
 		</array>
 		<key>7BB7F21F-C8C2-43F7-8BBE-943D4C1DC093</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>CE164F79-4BC0-421A-8C8F-28F4053AE9E1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>94CEC20B-F6C7-4A5B-945E-77E15FFCB576</key>
 		<array>
 			<dict>
@@ -117,13 +106,14 @@
 				<array>
 					<string>/Applications/Google Chrome.app</string>
 					<string>/Applications/Google Chrome Canary.app</string>
+					<string>/Applications/Canary.app</string>
 					<string>/Applications/Spotify.app</string>
 					<string>/Applications/Spectacle.app</string>
 					<string>/Applications/iTerm.app</string>
 					<string>/Applications/PhpStorm.app</string>
-					<string>/Applications/Gmail.app</string>
 					<string>/Applications/Slack.app</string>
 					<string>/Applications/TogglDesktop.app</string>
+					<string>/Applications/AirDroid.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -348,23 +338,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Rambox.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>CE164F79-4BC0-421A-8C8F-28F4053AE9E1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -398,7 +371,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Microsoft Outlook.app</string>
+					<string>/Applications/Nylas Mail.app</string>
 				</array>
 				<key>toggle</key>
 				<false/>
@@ -518,13 +491,6 @@
 			<integer>100</integer>
 			<key>ypos</key>
 			<integer>190</integer>
-		</dict>
-		<key>CE164F79-4BC0-421A-8C8F-28F4053AE9E1</key>
-		<dict>
-			<key>xpos</key>
-			<integer>500</integer>
-			<key>ypos</key>
-			<integer>660</integer>
 		</dict>
 		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
 		<dict>
