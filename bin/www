@@ -1,0 +1,18 @@
+#!/bin/bash
+# Duplicate the base vhost template, will need SUDO!!!
+sudo -v
+
+if [ "$2" != "" ]
+then
+    echo "Creating a vhost for $1 with a webroot in $HOME/Sites/$1/web/"
+    sudo cp /usr/local/etc/httpd/vhosts/templates/$2 /usr/local/etc/httpd/vhosts/$1.test.conf
+else
+    echo "Creating a vhost for $1 with a webroot in $HOME/Sites/$1/"
+    sudo cp /usr/local/etc/httpd/vhosts/templates/default /usr/local/etc/httpd/vhosts/$1.test.conf
+fi
+
+sudo sed -i 's/template/'$1'/g' /usr/local/etc/httpd/vhosts/$1.test.conf
+
+sudo apachectl -k restart
+
+echo "Done, please browse to http://$1.test to check!"
