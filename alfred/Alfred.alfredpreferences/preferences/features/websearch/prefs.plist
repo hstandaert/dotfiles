@@ -4,21 +4,6 @@
 <dict>
 	<key>customSites</key>
 	<dict>
-		<key>53258BA9-2C25-444D-AB7E-1520B28A1594</key>
-		<dict>
-			<key>enabled</key>
-			<true/>
-			<key>keyword</key>
-			<string>bit</string>
-			<key>plusSpaces</key>
-			<true/>
-			<key>text</key>
-			<string>Search bitbucket repo's for {query}</string>
-			<key>url</key>
-			<string>https://bitbucket.org/dashboard/repositories?search={query}</string>
-			<key>utf8</key>
-			<true/>
-		</dict>
 		<key>8AE9BC5C-4C20-4ACE-8AF5-4B26FD087F06</key>
 		<dict>
 			<key>enabled</key>
@@ -29,6 +14,19 @@
 			<string>Search giphy for '{query}'</string>
 			<key>url</key>
 			<string>http://giphy.com/search/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>AC5A8F57-23F6-4424-9DC7-5471994D0623</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>i</string>
+			<key>text</key>
+			<string>Open story {query} in JIRA</string>
+			<key>url</key>
+			<string>https://digipolisgent.atlassian.net/browse/{query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>

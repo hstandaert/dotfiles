@@ -9,6 +9,7 @@
 		<string>1Password</string>
 		<string>Wallet</string>
 		<string>LastPass</string>
+		<string>Bitwarden</string>
 	</array>
 	<key>hotkey</key>
 	<dict>
