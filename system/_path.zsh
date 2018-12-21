@@ -9,7 +9,10 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # add nvm to path
 export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
+source $(brew --prefix nvm)/nvm.sh
+
+# add gems to path
+export PATH="/usr/local/lib/ruby/gems/2.5.0/bin:$PATH"
 
 # add mysql dir to path
 export PATH="/usr/local/mysql/bin:$PATH"
