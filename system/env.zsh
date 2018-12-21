@@ -1,1 +1,1 @@
-export EDITOR='phpstorm'
+export EDITOR='pstorm'
