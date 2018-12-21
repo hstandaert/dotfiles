@@ -10,6 +10,12 @@ alias sudo='sudo '
 # disable autocorrect and run as admin
 alias mtr="nocorrect sudo mtr"
 
+# Print ip address
+alias myip='curl icanhazip.com'
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | perl -nle'/(\d+.\d+.\d+.\d+)/ && print $1'"
+
 # generate password
 # optional variable is the length of the password (otherwise 26)
 genpwd() {
