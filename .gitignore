@@ -7,5 +7,6 @@ atom.symlink/themes
 atom.symlink/compile-cache
 
 git/gitconfig.symlink
+alfred
 
 cache

@@ -43,6 +43,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>C973DF65-44FE-4BDE-A074-A84063834EAE</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>caniuse</string>
+			<key>text</key>
+			<string>Can i use "{query}"</string>
+			<key>url</key>
+			<string>https://caniuse.com/#search={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
