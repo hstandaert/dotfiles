@@ -1,0 +1,5 @@
+#!/bin/bash
+# Usage: git default
+
+DEFAULT_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
+git checkout $DEFAULT_BRANCH

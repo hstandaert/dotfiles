@@ -1,0 +1,5 @@
+#!/bin/bash
+# Usage: git jira
+
+TICKET_NUMBER=$(git rev-parse --abbrev-ref HEAD | cut -d'/' -f 2)
+open "https://digipolisgent.atlassian.net/browse/$TICKET_NUMBER"

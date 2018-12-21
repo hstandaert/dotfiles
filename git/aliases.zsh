@@ -27,3 +27,7 @@ alias gr='git reset'
 alias grh='git reset HEAD~1'
 alias gua='git reset HEAD' # git undo add
 alias gum='git reset --merge ORIG_HEAD' # git undo merge
+
+# Git flow
+alias gf='git flow'
+alias gff='git flow feature'
