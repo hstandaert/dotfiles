@@ -118,9 +118,9 @@ bind C-b copy-mode -u
 
 # Make copy mode behave more like Vim.
 # Moreover, make 'y' copy also to the system clipboard.
-bind -t vi-copy v begin-selection
-bind -t vi-copy C-v rectangle-toggle
-bind -t vi-copy y copy-pipe "xclip -filter -selection clipboard | xclip -selection primary"
+#bind -t vi-copy v begin-selection
+#bind -t vi-copy C-v rectangle-toggle
+#bind -t vi-copy y copy-pipe "xclip -filter -selection clipboard | xclip -selection primary"
 
 #------------------------------------------------------------------------------
 # Styling.
