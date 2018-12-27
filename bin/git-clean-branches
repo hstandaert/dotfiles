@@ -1,6 +1,12 @@
 #!/bin/bash
 # Usage: git clean-branches
 
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+
 DEFAULT_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
 CURRENT_BRANCH=$(git name-rev --name-only HEAD)
 
@@ -9,26 +15,37 @@ git stash -q --keep-index > /dev/null 2> /dev/null
 
 if [ "$CURRENT_BRANCH" != "$DEFAULT_BRANCH" ]
 then
-    echo "Checking out to $DEFAULT_BRANCH..."
+    echo -e "${YELLOW}Checking out to ${GREEN}$DEFAULT_BRANCH${YELLOW}...${NC}"
     git checkout $DEFAULT_BRANCH > /dev/null 2> /dev/null
 fi
 
-git pull > /dev/null
-
-echo "Deleting local branches that are no longer available in remote..."
+git pull > /dev/null 2> /dev/null
 git remote prune origin > /dev/null
-git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d > /dev/null
 
+BRANCHES_TO_DELETE=$(git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}')
+
+echo
+if [ -z "$BRANCHES_TO_DELETE" ]
+then
+    echo -e "${RED}No branches to delete${NC}."
+else
+    echo -e "${GREEN}Deleted${NC}:"
+
+    for f in $BRANCHES_TO_DELETE
+    do
+        echo "* $f"
+        git branch -d $f > /dev/null
+    done
+fi
+
+echo
 
 if [ "$CURRENT_BRANCH" != "$DEFAULT_BRANCH" ]
 then
-    echo "Checking out to $CURRENT_BRANCH..."
+    echo -e "${YELLOW}Checking out to ${GREEN}$CURRENT_BRANCH${YELLOW}...${NC}"
     git checkout $CURRENT_BRANCH > /dev/null 2> /dev/null
 fi
 
 # We're done, we can unstash changes.
 git stash pop -q > /dev/null 2> /dev/null
-
-echo ""
-echo "Done!"
 
