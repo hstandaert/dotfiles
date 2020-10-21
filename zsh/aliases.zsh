@@ -31,9 +31,4 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # Colored output for cat
-alias cat="ccat"
-
-# Framework aliases
-alias sf='app/console' # Symfony shortcut
-alias c='bin/cake' # CakePHP shortcut
-alias pa='php artisan' # Laravel artisan shortcut
+alias cat='ccat'
