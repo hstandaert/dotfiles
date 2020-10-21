@@ -1,1 +1,1 @@
-export EDITOR='pstorm'
+export EDITOR='code'
