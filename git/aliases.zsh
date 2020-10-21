@@ -31,3 +31,8 @@ alias gum='git reset --merge ORIG_HEAD' # git undo merge
 # Git flow
 alias gf='git flow'
 alias gff='git flow feature'
+
+# Gitio urls
+gitio() {
+    curl -i https://git.io -F "url=$1"
+}
