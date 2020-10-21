@@ -8,10 +8,15 @@ YELLOW='\033[0;33m'
 NC='\033[0m' # No Color
 
 DEFAULT_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
-CURRENT_BRANCH=$(git name-rev --name-only HEAD)
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+HAS_CHANGES=0
 
 # Stash the current changes.
-git stash -q --keep-index > /dev/null 2> /dev/null
+if [[ `git status --porcelain` ]]; then
+    echo -e "${YELLOW}Stashing your current changes...${NC}"
+    git stash -q --keep-index > /dev/null 2> /dev/null
+    HAS_CHANGES=1
+fi
 
 if [ "$CURRENT_BRANCH" != "$DEFAULT_BRANCH" ]
 then
@@ -34,7 +39,7 @@ else
     for f in $BRANCHES_TO_DELETE
     do
         echo "* $f"
-        git branch -d $f > /dev/null
+        git branch -D $f > /dev/null
     done
 fi
 
@@ -46,6 +51,10 @@ then
     git checkout $CURRENT_BRANCH > /dev/null 2> /dev/null
 fi
 
-# We're done, we can unstash changes.
-git stash pop -q > /dev/null 2> /dev/null
 
+if [ $HAS_CHANGES = 1 ]
+then
+    # We're done, we can unstash changes.
+    echo -e "${YELLOW}Unstashing your changes...${NC}"
+    git stash pop -q > /dev/null 2> /dev/null
+fi
