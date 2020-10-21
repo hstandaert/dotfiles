@@ -5,14 +5,4 @@
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 
-# Upgrade homebrew
-brew update
-
-# Upgrade all outdated brew packages
-brew upgrade --cleanup `brew outdated`
-
-# Upgrade all brew casks
-brew cu --cleanup --yes
-
-# install/upgrade the atom packages
-apm update --no-confirm
+brew upgrade

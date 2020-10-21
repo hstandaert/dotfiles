@@ -19,6 +19,8 @@
   copy-branch-name = !$ZSH/bin/git-copy-branch-name
   all = !$ZSH/bin/git-all
   count = !git shortlog -sn
+  default=!$ZSH/bin/git-default
+  jira=!$ZSH/bin/git-jira
 [color]
   diff = auto
   status = auto
