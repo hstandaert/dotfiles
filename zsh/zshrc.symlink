@@ -35,8 +35,6 @@ do
   source $file
 done
 
-eval "$(rbenv init -)"
-
 unset config_files
 export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
 eval "$(pyenv init -)"
