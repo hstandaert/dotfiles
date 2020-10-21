@@ -1,9 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "# IF THE IMAGES DON'T EXIST LOCALLY, FETCH THEM FROM THE PRODUCTION ENV\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteCond %{HTTP_HOST} (^.*\\.dev|.*\\.xip\\.io:[0-9]{4}|localhost) [NC]\nRewriteRule [^.]+\\.(jpe?g|gif|png|svg) http:\/\/www.provamel.com\/$0 [NC,L]",
-    "dontautoexpand" : true,
-    "uid" : "ECF9FFF8-D9C1-4B8A-9872-A5DF4382798E",
-    "name" : ".htaccess - Load images from production",
-    "keyword" : "htaccess images production"
-  }
-}

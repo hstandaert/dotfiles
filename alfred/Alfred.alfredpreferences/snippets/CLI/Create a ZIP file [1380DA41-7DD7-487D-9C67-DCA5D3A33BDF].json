@@ -1,8 +1,0 @@
-{
-  "alfredsnippet" : {
-    "snippet" : "zip -r archive.zip dir1",
-    "uid" : "1380DA41-7DD7-487D-9C67-DCA5D3A33BDF",
-    "name" : "Create a ZIP file",
-    "keyword" : "zip"
-  }
-}
