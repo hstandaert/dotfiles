@@ -17,3 +17,6 @@ if test -f $gitflow_completion
 then
   source $gitflow_completion
 fi
+
+# Github Completion
+eval "$(gh completion -s zsh)"
