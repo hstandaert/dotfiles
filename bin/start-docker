@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Open Docker, only if Docker not running
+if (! docker ps -q 2>/dev/null ); then
+  # On Mac OS this would be the terminal command to launch Docker
+  open /Applications/Docker.app
+  echo "~> Starting Docker..."
+  echo ""
+
+# Wait until Docker daemon is running and has completed initialisation
+while (! docker ps -q 2>/dev/null ); do
+  # Docker takes a few seconds to initialize
+  sleep 2
+done
+fi
+
+echo "Docker is up and running!"
+echo ""
