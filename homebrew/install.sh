@@ -9,7 +9,7 @@
 if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Make sure we’re using the latest Homebrew
@@ -18,7 +18,7 @@ brew update
 # Upgrade any already-installed formulae
 brew upgrade
 
-# Install GNU core utilities (those that come with OS X are outdated)
+# Install GNU core utilities
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
 # Install some other useful utilities like `sponge`
@@ -37,30 +37,16 @@ brew install zsh zsh-completions
 brew install wget --enable-iri
 
 # Install more recent versions of some OS X tools
-brew install vim --override-system-vi
-brew install homebrew/dupes/grep
+brew install neovim
+brew install grep
 brew install git
-brew install mysql
 
 # Install usefull binaries
 brew install ack
 brew install gpg
-brew install node
-brew install imagemagick --with-webp
-brew install rename
-
-# PHP versions
-brew tap josegonzalez/php
-brew install php55
-brew install php56
-brew install php70
-brew install php71
 
 # https://github.com/jakubroztocil/httpie
 brew install httpie
-
-# https://github.com/sstephenson/rbenv
-brew install rbenv ruby-build
 
 # http://jonas.nitro.dk/tig/
 brew install tig
@@ -71,26 +57,31 @@ brew install nvm
 # Syntax highlighting for cat
 brew install ccat
 
-# =================
-#   Homebrew cask
-# =================
-brew install caskroom/cask/brew-cask
+# Daily software
+brew install authy --cask
+brew install beekeeper-studio --cask
+brew install docker --cask
+brew install fing --cask
+brew install google-chrome-canary --cask
+brew install hiddenbar --cask
+brew install insomnia --cask
+brew install mailspring --cask
+brew install muzzle --cask
+brew install rectangle --cask
+brew install slack --cask
+brew install spotify --cask
+brew install todoist --cask
+brew install visual-studio-code --cask
+brew install vlc --cask
+brew install vysor --cask
+brew install warp --cask
 
-# Add command to upgrade casks
-brew tap buo/cask-upgrade
+# Messaging
+brew install messenger --cask
+brew install whatsapp --cask
 
-# Some handy tools
-brew cask install atom
-brew cask install google-chrome
-brew cask install sequel-pro
-brew cask install spectacle
-brew cask install google-cloud-sdk
-brew cask install caffeine
-
-#Extensions for mac OSX quicklook
-brew cask install qlcolorcode
-brew cask install quicklook-csv
-brew cask install quicklook-json
-brew cask install qlstephen
+# Fonts
+brew install font-fira-code --cask
+brew install font-hack-nerd-font --cask
 
 exit 0

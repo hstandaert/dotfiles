@@ -32,3 +32,14 @@ alias egrep='egrep --color=auto'
 
 # Colored output for cat
 alias cat='ccat'
+
+# docker
+alias docker-stop='docker stop $(docker ps -a -q)'
+alias docker-nuke='docker container kill $(docker ps -q) && docker system prune -af'
+
+# Android development
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
