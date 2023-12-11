@@ -48,8 +48,8 @@ brew install gpg
 # https://github.com/jakubroztocil/httpie
 brew install httpie
 
-# http://jonas.nitro.dk/tig/
-brew install tig
+# https://github.com/extrawurst/gitui
+brew install gitui
 
 # Node version manager
 brew install nvm

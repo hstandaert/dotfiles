@@ -42,6 +42,11 @@ nbproject
 ehthumbs.db
 Thumbs.db
 
+# Local certificates #
+######################
+localhost-key.pem
+localhost.pem
+
 # Other Files #
 ###############
 *.codekit
@@ -49,3 +54,4 @@ Thumbs.db
 .tags
 .tags1
 .vscode
+.ruby-version

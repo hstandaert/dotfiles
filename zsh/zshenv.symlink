@@ -25,3 +25,9 @@ export PROJECTS=~/Sites
 export CHEF_USER="bertpattyn"
 export CHEF_EMAIL="bert.pattyn@wijs.be"
 export CHEF_ORG="wijs"
+
+# GPG
+export GPG_TTY=$(tty)
+
+#rbenv
+export PATH="$HOME/.rbenv/shims:$PATH"
